@@ -1,0 +1,74 @@
+.grid {
+    width: 100%;
+    overflow-x:auto;
+    overflow-y:auto;
+}
+    .grid table{
+        background-color: #fff;
+    }
+
+    .grid thead {                     /* Thay bằng th sẽ ra hiệu ứng quái dị cho table head khi scroll ngang*/
+        position:sticky;              /* th không bị scroll đi là nhờ cái này :) */
+        background-color: #ffffff;  /* thực chất tbody bị cuộn lên nhưng cái này làm nó bị che đi :) */
+        z-index:1; top:0; left:0;
+        font-weight: bold !important;
+        text-align: left;
+    }
+    /* .grid .grid-header {
+        height: 48px;
+    } */
+    /* .grid .grid-content, .tablescroll_wrapper, .tablescroll {
+        height: calc(100% - 25px);
+    } */
+
+    .grid tbody tr:hover {
+        background-color: #e9ebee;
+        cursor: pointer;
+    }
+    .grid .row-selected{
+        background-color: #c7ffd5 !important;
+    }
+    /* .grid tr:nth-child(odd) {
+        background-color: #e5e5e5;
+    } */
+
+
+        .grid td, .grid th{
+            border-bottom: 2px solid #e9ebee;
+            padding: 0px 16px !important;
+            height: 48px !important;
+            box-sizing: border-box;
+        }
+        .grid th{   
+            white-space: nowrap; /* Bộ 3 chống tràn */
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
+        
+        .grid td {
+            text-align: left;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /* phần ẩn đi được thay thế bằng ...*/
+            word-break: break-word;
+        }
+        /* .grid table td span {
+            overflow: hidden;
+            text-overflow: ellipsis; 
+            white-space: nowrap;
+        } */
+
+        .row-checkbox-wrapper{
+            width: 48px;
+        }
+        .row-checkbox{
+            width: 20px;
+            height: 20px;
+            border-radius: 4px;
+            border: 2px solid #bbb;
+            box-sizing: border-box !important;
+        }
+        .row-selected .row-checkbox{
+            border: none;
+            background-color: #01B075;
+        }

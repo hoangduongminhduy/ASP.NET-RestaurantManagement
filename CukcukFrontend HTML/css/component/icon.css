@@ -1,0 +1,38 @@
+.navbar-head .grid-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../asset/icon/toggle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+	background-color:white;
+}   
+    .grid-menu:hover{
+        cursor:pointer;
+		background-color:#e5e5e5;
+    }
+.navbar-head .banner {
+    height: 24px;
+    margin-left: 10px;
+}
+
+.defaul-icon {
+	width: 16px;
+	height: 16px;
+	margin-left: 16px;
+}
+    .defaul-icon:hover{
+        cursor:pointer;
+    }
+.drop-down-icon{
+	margin-left:10px;
+}
+.avt-icon {
+    width: 30px;
+    height: 30px;
+	margin-right:16px;
+}
+.bell-icon{
+	width:24px;
+	height:24px;
+}

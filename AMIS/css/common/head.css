@@ -1,0 +1,7 @@
+.head {
+	float:right;
+	background-color:#ffffff;
+	width: calc(100% - 221px);
+	height: 60px;
+	border-bottom: 1px solid #e5e5e5;
+}

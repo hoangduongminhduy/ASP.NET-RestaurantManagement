@@ -1,0 +1,34 @@
+		XÂY DỰNG KIẾN TRÚC CHO ỨNG DỤNG THEO CHUẨN ASP.NET ARCHITECTURE
+
+B1: TẠO MỚI PRJ
+api (asp.net core web api)
+core (class library)
+infrastructure (class library)
+
+
+B2: tạo reference giữa các prj
+api (or app) phụ thuộc vào core (compile, run) và infras (runtime)
+infras phụ thuộc vào core (compile)
+core độc lập. 
+
+// Làm việc thông qua interfaces!!!
+
+B3: xd logic các prj
+* infrastructure: ket noi, tương tác db, gap exception thi throw
+trả về data: int, string, bool hoặc obj, list...
+	- dapper
+	(more: see ASP.NET core architecture)
+* core: mô hình hóa, xử lí nghiệp vụ, validate đầu vào, throw exception
+	- interfaces: bắt buộc
+	- entities
+	- services : trả về serviceresult = data + đoạn thông tin lỗi hoặc thành công
+* api: trên cùng, tương tác và trả về cho khách hàng, bat exception bi throw
+trả về HTTP = serviceresult (response) + http code
+	- controller (api)
+	
+
+B4: code logic
+
+B5: Xử lí DI dependency injection (kĩ thuật tiêm): xem trong file start up của package api
+	chương trình sẽ duyệt hết các constructor của solution, xem chỗ nào dùng tiêm thì áp vào
+		services.AddScope<IAbc, Abc>();

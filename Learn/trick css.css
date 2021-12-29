@@ -1,0 +1,47 @@
+/***************    SELECTOR AND COMINATOR    ***************/
+/* TÁC ĐỘNG LÊN CHÍNH NÓ / CHÚNG NÓ */
+h1 {color: #00e56b}
+myTag, li,p {color:indigo; font-weight: bold;}
+#id01 {color: red}
+.myClass {color:slategray}
+
+/* TÁC DỘNG LÊN HẬU DUỆ / LIỀN SAU CỦA NÓ */
+myTag p,div,li {color:tomato} /* Tất cả thẻ p, thẻ div, thẻ li là hậu duệ của thẻ myTag */
+myTag .myClass {color:teal}  /* Tất cả thẻ thuộc lớp myClass là hậu duệ của thẻ myTag */
+myTag>p {color: tomato} /* Tất cả thẻ p là con, không phải cháu của thẻ myTag*/
+myTag~p {color: tomato  } /* Tất cả thẻ p cùng cấp, cùng cha nằm sau myTag */
+myTag+p {color: tomato} /* Thẻ p đầu tiên cùng cấp, cùng cha, nằm ngay sau myTag */
+
+/* HỖN HỢP */
+myTag, p, myTag>.myClass {color:indigo; font-weight: bold;}
+
+
+
+
+/***************    TRICK   ***************/
+mystyle {
+    height:100vh;
+
+    width:calc(100% - 40px);
+
+    box-sizing: border-box;
+    
+    position:center;
+
+    float: right;
+
+    padding: 12px 16px 12px 16px;
+
+    border: 1px solid #bbbbbb;
+    border-radius: 0 4px 4px 0;
+    
+    box-shadow: 4px 4px 4px 4px #ccc;
+    
+    background-image: url("/asset/icon/search.png");
+    background-position: 10px center;
+    background-size: 16px 16px;
+    background-color: #019160;
+    background-repeat: no-repeat;
+    
+    border-collapse: collapse;
+}

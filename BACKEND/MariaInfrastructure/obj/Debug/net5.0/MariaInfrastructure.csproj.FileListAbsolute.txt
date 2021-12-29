@@ -1,0 +1,15 @@
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\bin\Debug\net5.0\MariaInfrastructure.deps.json
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\bin\Debug\net5.0\MariaInfrastructure.dll
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\bin\Debug\net5.0\ref\MariaInfrastructure.dll
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\bin\Debug\net5.0\MariaInfrastructure.pdb
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\bin\Debug\net5.0\CukcukCore.dll
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\bin\Debug\net5.0\CukcukCore.pdb
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\obj\Debug\net5.0\MariaInfrastructure.csproj.AssemblyReference.cache
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\obj\Debug\net5.0\MariaInfrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\obj\Debug\net5.0\MariaInfrastructure.AssemblyInfoInputs.cache
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\obj\Debug\net5.0\MariaInfrastructure.AssemblyInfo.cs
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\obj\Debug\net5.0\MariaInfrastructure.csproj.CoreCompileInputs.cache
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\obj\Debug\net5.0\MariaInfrastructure.dll
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\obj\Debug\net5.0\ref\MariaInfrastructure.dll
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\obj\Debug\net5.0\MariaInfrastructure.pdb
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\MariaInfrastructure\obj\Debug\net5.0\MariaInfrastructure.csproj.CopyComplete

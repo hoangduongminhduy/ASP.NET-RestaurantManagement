@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>965 Cukcuk.vn</title>
+	<link rel="shortcut icon" href="../asset/icon/favicon.ico" />
+	<link href="../css/common/main.css" rel="stylesheet" />
+	<link href="../css/common/google-sans.css" rel="stylesheet" />
+	<link href="../css/common/dialog.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbar-head">
+			<button class="grid-menu"></button>
+			<img class="banner" src="../asset/img/cukcuk-logo.png"/>
+		</div>
+		
+		<div class="navbar-items">
+			<button class="navbar-item">
+				<img class="navbar-item-icon" src="../asset/icon/dashboard.png" />
+				Tổng quan
+			</button>
+            <button class="navbar-item"  onclick="location.href = `customer.html`">
+				<img class="navbar-item-icon" src="../asset/icon/dic-employee.png" />
+				Khách hàng
+			</button>
+			<button class="navbar-item navbar-item-focus" onclick="location.href = `employee.html`">
+				<img class="navbar-item-icon" src="../asset/icon/dic-employee.png" />
+				Nhân viên
+			</button>
+			<button class="navbar-item">
+				<img class="navbar-item-icon" src="../asset/icon/setting.png" />
+				Cài đặt
+			</button>
+		</div>
+	</div>
+	<div class="total">
+		<header>
+			<div class="head-selector">
+				Nhà hàng biển Đông
+				<img class="defaul-icon drop-down-icon" src="../asset/icon/down.png" />
+			</div>
+			<div class="head-account">
+				<img class="defaul-icon bell-icon" src="../asset/icon/bell.png" />
+				<img class="defaul-icon avt-icon" src="../asset/img/avatar-default.png"/>
+				Hoàng Nhật Minh
+				<img class="defaul-icon" src="../asset/icon/option.png"/>
+			</div>
+		</header>
+		<main>
+			<div class="add-bar">
+				Danh sách nhân viên
+				<button class="add-btn">Thêm nhân viên</button>
+			</div>
+			<div class="search-bar">
+				<div class="search-fields">
+					<input type="text" placeholder="Tìm kiếm theo Mã, Tên hoặc Số điện thoại" />
+					<div class="combobox">
+						<input class="combobox-input"/>
+						<button class="combobox-btn"></button>
+						<div class="combobox-select">
+							<div class="combobox-item">Trạng thái 1</div>
+							<div class="combobox-item combobox-item-selected">Trạng thái 2</div>
+							<div class="combobox-item">Trạng thái 3</div>
+						</div>
+					</div>
+					<div class="combobox">
+						<input class="combobox-input"/>
+						<button class="combobox-btn"></button>
+						<div class="combobox-select">
+							<div class="combobox-item">Vị trí giám đốc </div>
+							<div class="combobox-item combobox-item-selected">Leve</div>
+							<div class="combobox-item">Pha trà rót nước</div>
+						</div>
+					</div>
+				</div>
+				<button class="refresh-btn"></button>
+			</div>
+			<div class="table-wrapper">
+			<table id="employee-table">
+				<thead><tr>
+					<th class="align-left small" fieldName="code">Mã nhân viên</th>
+					<th class="align-left" fieldName="name">Họ và tên</th>
+					<th class="align-left small" fieldName="sex">Giới tính</th>
+					<th class="align-center small" fieldName="birth" formatType="ddmmyyyy">Ngày sinh</th>
+					<th class="align-right small" fieldName="phone">Điện thoại</th>
+					<th class="align-left"fieldName="email">Email</th>
+					<th class="align-left" fieldName="position">Chức vụ</th>
+					<th class="align-left" fieldName="department">Phòng ban</th>
+					<th class="align-right" fieldName="salary" formatType="money">Mức lương cơ bản</th>
+					<th class="align-left" fieldName="state">Tình trạng công việc</th>
+				</tr></thead>
+				<tbody></tbody>
+			</table>
+			</div>
+		</main>
+		<footer>
+			<p>Hiển thị <b>01-23/1000</b> lao động</p>
+					 <div class="page-bar">
+					 	<button class="nav-page-btn" style="background-image:url('../asset/icon/btn-firstpage.svg')"></button>
+					 	<button class="nav-page-btn" style="background-image:url('../asset/icon/btn-prev-page.svg')"></button>
+					 	<button class="page-btn page-btn-focus">1</button>
+					 	<button class="page-btn">2</button>
+					 	<button class="page-btn">3</button>
+					 	<button class="page-btn">4</button>
+					 	<button class="nav-page-btn" style="background-image:url('../asset/icon/btn-next-page.svg')"></button>
+					 	<button class="nav-page-btn" style="background-image:url('../asset/icon/btn-lastpage.svg')"></button>
+					 </div>
+			<p><b>20</b> lao động/trang</p>
+		</footer>
+	</div>
+
+
+
+	<!--DIALOG AREAS-->
+	<div class="m-dialog">
+		<div class="m-dialog-modal"></div>
+		<div class="m-dialog-box">
+			<div class="m-dialog-header">
+				<div class="m-dialog-title">THÔNG TIN NHÂN VIÊN</div>
+				<div class="m-dialog-close"></div>
+			</div>
+			<div class="m-dialog-content">
+				<div class="upload-img-area">
+					<button></button>
+					(Vui lòng chọn hình ảnh có<br/>định dạng<br/>.jpg, .jpeg, .png, .gif)
+				</div>
+				<div class="input-area">
+					<p class="title">A.THÔNG TIN CHUNG</p>
+					<div class="decor-bar"></div>
+
+					<div class="row">
+						<div class="label-input">
+							<p>Mã nhân viên(<span class="red-char">*</span>)</p>
+							<input/>
+						</div>
+						<div class="label-input">
+							<p>Họ và tên(<span class="red-char">*</span>)</p>
+							<input/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="label-input">
+							<p>Ngày sinh</p>
+							<input/>
+						</div>
+						<div class="label-input">
+							<p>Giới tính</p>
+							<input/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="label-input">
+							<p>Số CMTND/ Căn cước(<span class="red-char">*</span>)</p>
+							<input/>
+						</div>
+						<div class="label-input">
+							<p>Ngày cấp</p>
+							<input/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="label-input">
+							<p>Nơi cấp(<span class="red-char">*</span>)</p>
+							<input/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="label-input">
+							<p>Email(<span class="red-char">*</span>)</p>
+							<input/>
+						</div>
+						<div class="label-input">
+							<p>Số điện thoại(<span class="red-char">*</span>)</p>
+							<input/>
+						</div>
+					</div>
+
+					<p class="title">B.THÔNG TIN CÔNG VIỆC</p>
+					<div class="decor-bar"></div>
+
+					<div class="row">
+						<div class="label-input">
+							<p>Vị trí</p>
+							<input/>
+						</div>
+						<div class="label-input">
+							<p>Phòng ban</p>
+							<input/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="label-input">
+							<p>Mã số thuế cá nhân</p>
+							<input/>
+						</div>
+						<div class="label-input">
+							<p>Mức lương cơ bản</p>
+							<input/>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="label-input">
+							<p>Ngày gia nhập công ty</p>
+							<input/>
+						</div>
+						<div class="label-input">
+							<p>Tình trạng công việc</p>
+							<input/>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="m-dialog-footer">
+				<button class="cancel-btn">Hủy</button>
+				<button class="save-btn">Lưu</button>
+			</div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
+
+<!-- Thu vien dung chung -->
+<script src="../js/lib/jquery.js"></script>
+<script src="../js/lib/Combobox.js"></script>
+<!-- JS dung chung -->
+<script src="../js/common/CommonJS.js"></script>
+<script src="../js/common/Enum.js"></script>
+<script src="../js/common/Resource.js"></script>
+<script src="../js/page/BasePage.js"></script>
+<!-- JS dung rieng cho page nay -->
+<script src="../js/page/CustomerPage.js"></script>

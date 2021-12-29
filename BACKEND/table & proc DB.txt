@@ -1,0 +1,85 @@
+- set range and start value input date
+- display date input as dd mm yyyy
+- debit amount input must be number and auto gen comma between thousand
+
+- try to add new with gender, date and debit amount in true format
+
+- hien thi duoc du lieu dung cho tinh nang sua
+- thua hien put du lieu 
+
+-----------------------------
+KẾT LỐY
+47.241.69.179
+dev 
+manhmisa
+
+ĐA TA BÂY GIỪ
+MISA.WEB09.HNMINH
+charset utf8
+-----------------------------
+CREATE PROCEDURE `MISA.WEB09.NVMANH`.Proc_InsertCustomer(IN m_CustomerId CHAR(36), IN m_CustomerCode VARCHAR(20), IN m_FullName VARCHAR(100), IN m_Gender INT, IN m_DateOfBirth DATE, IN m_PhoneNumber VARCHAR(50), IN m_Email VARCHAR(100), IN m_DebitAmount DOUBLE, IN m_CustomerGroupId CHAR(36), IN m_MemberCardNo VARCHAR(255), IN m_Address VARCHAR(255))
+  SQL SECURITY INVOKER
+  COMMENT 'Thêm mới khách hàng'
+BEGIN
+  INSERT INTO Customer (CustomerId, CustomerCode, FullName, Gender, DateOfBirth, PhoneNumber, Email, Address, DebitAmount, CustomerGroupId, MemberCardNo, CreatedDate, CreatedBy, ModifiedDate, ModifiedBy)
+  VALUES (m_CustomerId, 
+          m_CustomerCode, 
+          m_FullName, 
+          m_Gender, 
+          m_DateOfBirth, 
+          m_PhoneNumber, 
+          m_Email, 
+          m_Address, 
+          m_DebitAmount, 
+          m_CustomerGroupId, 
+          m_MemberCardNo, 
+          NOW(), 
+          NULL, 
+          NULL, 
+          NULL);
+END
+-----------------------------
+
+CREATE TABLE `MISA.WEB09.HNMINH`.CustomerGroup (
+  CustomerGroupId char(36) NOT NULL DEFAULT '' COMMENT 'id nhóm khách hàng',
+  CustomerGroupName varchar(255) DEFAULT NULL COMMENT 'tên nhóm khách hàng',
+  CreatedBy varchar(100) DEFAULT 'Hoàng Nhật Minh' COMMENT 'người tạo',
+  CreatedDate datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'ngày tạo',
+  ModifiedBy varchar(100) DEFAULT 'Hoàng Nhật Minh' COMMENT 'người chỉnh sửa cuối',
+  ModifiedDate datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'ngày chỉnh sửa cuối',
+  PRIMARY KEY (CustomerGroupId)
+)
+ENGINE = INNODB,
+AVG_ROW_LENGTH = 4096,
+CHARACTER SET utf8,
+COLLATE utf8_general_ci,
+COMMENT = 'Nhóm khách hàng';
+
+-----------------------------------
+
+CREATE TABLE `MISA.WEB09.HNMINH`.Customer (
+  CustomerId char(36) NOT NULL DEFAULT '' COMMENT 'id khách hàng, chuỗi GUID',
+  CustomerCode varchar(20) NOT NULL DEFAULT '' COMMENT 'mã khách hàng',
+  FullName varchar(100) NOT NULL DEFAULT '' COMMENT 'tên đầy đủ khách hàng',
+  Gender int(11) DEFAULT NULL COMMENT 'giới tính khách hàng 0 Nữ, 1 Nam, 2 Khác',
+  DateOfBirth date DEFAULT NULL COMMENT 'ngày sinh khách hàng',
+  PhoneNumber varchar(50) DEFAULT NULL COMMENT 'số điện thoại khách hàng',
+  Email varchar(100) DEFAULT NULL COMMENT 'email khách hàng',
+  Address varchar(255) DEFAULT NULL COMMENT 'địa chỉ khách hàng',
+  DebitAmount double DEFAULT NULL COMMENT 'số tiền nợ của khách',
+  CustomerGroupId char(36) DEFAULT NULL COMMENT 'mã nhóm khách hàng của khách',
+  MemberCardNo varchar(255) DEFAULT NULL COMMENT 'mã thẻ thành viên của khách',
+  CreatedBy varchar(100) DEFAULT 'Hoàng Nhật Minh' COMMENT 'người tạo khách hàng',
+  CreatedDate datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'ngày tạo khách hàng',
+  ModifiedBy varchar(100) DEFAULT 'Hoàng Nhật Minh' COMMENT 'người sửa thông tin cuối của khách',
+  ModifiedDate datetime DEFAULT CURRENT_TIMESTAMP COMMENT 'ngày sửa thông tin cuối của khách',
+  PRIMARY KEY (CustomerId)
+)
+ENGINE = INNODB,
+AVG_ROW_LENGTH = 8192,
+CHARACTER SET utf8,
+COLLATE utf8_general_ci;
+
+ALTER TABLE `MISA.WEB09.HNMINH`.Customer
+ADD CONSTRAINT FK_Customer_Group FOREIGN KEY (CustomerGroupId)
+REFERENCES `MISA.WEB09.HNMINH`.CustomerGroup (CustomerGroupId) ON DELETE NO ACTION ON UPDATE NO ACTION;

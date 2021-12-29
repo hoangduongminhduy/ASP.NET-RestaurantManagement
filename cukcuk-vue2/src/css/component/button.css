@@ -1,0 +1,106 @@
+@import url("../common/google-sans.css");
+
+.navbar-head .grid-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/icon/toggle.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: none;
+	background-color:white;
+}   
+    .grid-menu:hover{
+        cursor:pointer;
+		background-color:#e5e5e5;
+    }
+
+.add-btn {
+	min-width:100px;
+	height: 40px;
+	float: right;
+	background-color: #019160;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 13px;
+	font-family: 'GoogleSans Regular';
+	text-align: left;
+	background-image: url("../../assets/icon/add.png");
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	background-position: 16px center;
+	border: none;
+	padding-right:16px;
+	padding-left:40px;
+}
+	.add-btn:hover {
+		cursor: pointer;
+		background-color: #2FBE8E;
+	}
+	.add-btn:focus {
+		background-color: #01B075;
+	}
+.refresh-btn {
+	float: right;
+	height:40px;
+	width:40px;
+	padding:0;
+	box-sizing:border-box;
+	background-image:url("../../assets/icon/refresh.png");
+	background-repeat:no-repeat;
+	background-size:16px 16px;
+	background-position:center center;
+	border:1px solid #bbbbbb;
+	border-radius:4px;
+}
+	.refresh-btn:hover{
+		cursor:pointer;
+	}
+	.refresh-btn:active{
+		background-color: #bbbbbb;
+	}
+
+.nav-page-btn,.page-btn {
+	width: 36px;
+	height: 36px;
+	padding:0px;
+	background-color:#E5E5E5;
+	font-family:GoogleSans;
+}
+.nav-page-btn:hover, .page-btn:hover {
+	border:none;
+	background-color:#fff;
+	cursor:pointer;
+}
+.nav-page-btn{
+	border-radius:4px;
+	border:none;
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-color:#e5e5e5;
+}
+	.nav-page-btn:active{
+		background-color:#bbbbbb;
+	}
+
+	.nav-first{
+		background-image: url('../../assets/icon/btn-firstpage.svg');
+	}
+	.nav-prev{
+		background-image: url('../../assets/icon/btn-prev-page.svg');
+	}
+	.nav-next{
+		background-image: url('../../assets/icon/btn-next-page.svg');
+	}
+	.nav-last{
+		background-image: url('../../assets/icon/btn-lastpage.svg');
+	}
+
+.page-btn {
+	border-radius:20px;
+	border:1px solid #bbbbbb;
+	
+}
+	.page-btn-focus, .page-btn-focus:hover {
+		background-color: #019160;
+		color:#fff;
+	}

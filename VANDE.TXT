@@ -1,0 +1,44 @@
+.net
+tại sao .net nó biết là không cần ăn những generic controller api
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+done 1. thuộc tính có : bị lỗi khi dùng cho html tag => no la props cua vue component
+			@ la event cua vue component (giong kieu @onclick)
+
+done 3. 
+onClickDiv: function(){
+	this.info = this.textContent
+}
+
+4.
+overflow: hidden;
+text-overflow: ellipsis;   hidden đi rồi liệu còn hiện ... không??? khác nhau giữa overflow hidden và text-overflow clip
+
+

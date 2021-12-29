@@ -1,0 +1,194 @@
+﻿@import url("../../css/common/google-sans.css");
+@import url("../component/scrollbar.css");
+
+.m-dialog {
+	display:none;
+	position: absolute;
+	left:0; right:0; top:0; bottom:0;
+}
+	.m-dialog .m-dialog-modal {
+		position:absolute;
+		left:0; right:0; top:0; bottom:0;
+		background-color:black;
+		opacity:.3;
+	}
+	.m-dialog .m-dialog-box{
+		position:absolute;
+		top:50%; left:50%;
+		transform: translate(-50%, -50%);
+		height:700px;
+		width: 694px;
+		background-color:white;
+		border-radius:4px;
+		display: flex;
+		flex-direction: column;
+	}
+		.m-dialog-box .m-dialog-header{
+			padding-left:24px; 
+			display:flex;
+			box-sizing: border-box;
+			height: 50px;
+		}
+			.m-dialog-header .m-dialog-title{
+				font-size:24px;  
+				text-transform:uppercase;
+				font-weight:500;
+				color:#000;
+				line-height: 50px;
+			}	
+			.m-dialog-header .m-dialog-close{
+				position:absolute; 
+				top:0px; right:0px;
+				width:36px;
+				height:36px;
+				
+				cursor:pointer;
+				border-radius:0 4px 0 4px;
+				background-image: url('../../asset/icon/x.svg');
+				background-repeat:no-repeat;
+				background-size:50% 50%	;
+				background-position:center center;
+			}
+				.m-dialog-header .m-dialog-close:hover {
+					background-color: #bbbbbb;
+				}
+		.m-dialog-box .m-dialog-content{
+			height: calc(100% - 56px - 50px);
+			box-sizing: border-box;
+			padding: 24px 0px 0px 24px;
+			width:100%;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: row;
+		}
+			.upload-img-area{
+				width: 180px;
+				height: 100%;
+				margin-right: 16px;
+				text-align: center;
+				font-size: 13px;
+				font-family: 'GoogleSans Regular';
+			}
+				.upload-img-area button{
+					width: 180px;
+					height: 180px;
+					border-radius: 100px;
+					border: 1px solid #e5e5e5;
+					background-image: url("../../asset/icon/default-avatar.jpg");
+					background-repeat: no-repeat;
+					background-size: 100% 100%;
+				}
+			.m-dialog-content .input-area{
+				flex:1;
+				overflow-y: auto;
+			}
+			 	.input-area .title{
+					font-size: 16px;
+					margin-bottom: 5px;
+					margin-top: 0;;
+				}
+				.input-area .decor-bar{
+					height: 5px;
+					width: 80px;
+					background-color: #019160;
+					margin-bottom: 8px;
+				}
+				.input-area .row{
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					width: 440px;
+				}
+				.input-area .label-input{
+					font-size: 13px;
+					font-family: 'GoogleSans Medium';
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					margin-bottom: 16px;
+				}
+					.label-input p{
+						margin-bottom: 4px;
+						margin-top: 0px;
+					}
+					.input-area .red-char{
+						font-size: 13px	;
+						font-family: 'GoogleSans Medium';
+						color:red;
+					}
+					.label-input>.dialog-input{
+						font-size: 13px;
+						font-family: 'GoogleSans Regular';
+						border: 1px solid #bbbbbb;
+						border-radius: 4px;
+						padding: 0 16px 0 16px;
+						height: 40px;
+						width: 213px;
+						box-sizing: border-box;
+						outline: none;
+					}
+						.dialog-input:focus{
+							border: 1px solid #019160;
+						}
+				.input-area input::placeholder{
+					font-size: 11px;
+					font-family: 'GoogleSans';
+					color:#bbbbbb
+				}
+
+		.m-dialog-box .m-dialog-footer{
+			height:56px;
+			background-color: #E9EBEE;
+			border-radius:0 0 4px 4px;
+			align-items: center;
+			justify-content: center;
+			align-content: center;
+			padding-right: 24px;
+			display: flex;
+			align-content: center;
+			justify-content: flex-end;
+		}
+			.m-dialog-footer .save-btn{
+				height: 40px;
+				background-color: #019160;
+				border-radius: 4px;
+				color: #fff;
+				font-size: 13px;
+				font-family: GoogleSans;
+				text-align: left;
+				background-image: url("../../asset/icon/document-online.png");
+				background-repeat: no-repeat;
+				background-size: 16px 16px;
+				background-position: 16px center;
+				border: none;
+				padding-right:16px;
+				padding-left:40px;
+				
+			}
+			.m-dialog-footer .save-btn:hover{
+				cursor: pointer;
+				background-color: #2FBE8E;
+			}
+			.m-dialog-footer .save-btn:focus{
+				cursor: pointer;
+				background-color: #01B075;
+			}
+
+			.m-dialog-footer .cancel-btn{
+				background-color: transparent;
+				border: none;
+				height: 40px;
+				width: 77px;
+				margin-right: 16px;
+				border-radius: 4px;
+				font-family: 'GoogleSans Regular';
+				font-size: 13px;
+			}
+			.m-dialog-footer .cancel-btn:hover{
+				cursor: pointer;
+				background-color: #BBBBBB;	
+			}
+			.m-dialog-footer .cancel-btn:focus{
+				background-color: #BBBBBB;
+			}
+

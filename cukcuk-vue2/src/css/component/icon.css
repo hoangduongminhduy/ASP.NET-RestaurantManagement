@@ -1,0 +1,25 @@
+.navbar-head .banner {
+    height: 24px;
+    margin-left: 10px;
+}
+
+.defaul-icon {
+	width: 16px;
+	height: 16px;
+	margin-left: 16px;
+}
+    .defaul-icon:hover{
+        cursor:pointer;
+    }
+.drop-down-icon{
+	margin-left:10px;
+}
+.avt-icon {
+    width: 30px;
+    height: 30px;
+	margin-right:16px;
+}
+.bell-icon{
+	width:24px;
+	height:24px;
+}

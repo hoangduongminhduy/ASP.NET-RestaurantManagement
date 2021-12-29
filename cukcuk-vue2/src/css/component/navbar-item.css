@@ -1,0 +1,36 @@
+﻿@import url("../common/google-sans.css");
+
+.navbar-item {
+    width: 100%;
+    font-size: 13px;
+    height: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #454545;
+    border: none;
+    background-color: #fff;
+    padding: 0;
+    border-radius: 0px;
+	font-family:'GoogleSans Regular';
+    text-decoration: none;
+}
+	.navbar-item:hover {
+		cursor: pointer;
+		font-family: 'GoogleSans Regular';
+		color: #000;
+		background-color: #e5e5e5;
+	}
+    .navbar-item-focus,.navbar-item-focus:hover {
+        font-family: 'GoogleSans Medium' !important;
+        background-color: #019160 !important;
+        color: #fff !important;
+    }
+
+    
+    .navbar-item-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 16px;
+        margin-right: 10px;
+    }

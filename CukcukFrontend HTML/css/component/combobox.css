@@ -1,0 +1,100 @@
+﻿@import url("../common/google-sans.css");
+
+/*COMBOBOX*/
+.combobox {
+	position: relative; /*Neu khong co dong nay, combobox-select se tran ra theo body*/
+	box-sizing: border-box;
+	width: 213px;
+	height: 40px;
+	border: 1px solid #bbbbbb;
+	display: flex;
+	background: #fff;
+}
+.combobox, .combobox-item, .combobox-input, .combobox-select, .combobox-btn{
+	border-radius: 4px !important;
+}
+	.combobox:hover {
+		cursor: pointer;
+	}
+
+	.combobox:focus-within {
+		border: 1px solid #019160;
+	}
+	.combobox-input {
+		width: calc(100% - 40px);
+		height: 100%;
+		border: none;
+		outline: none;
+		padding: 0 16px 0 16px;
+		box-sizing: border-box;
+		border: none;
+		color: #000;
+		font-size: 13px;
+		font-family: GoogleSans;
+		font-size: 13px;
+	}
+	.combobox-btn {
+		padding:0;
+		border:none;
+		box-sizing:border-box;
+		width: 40px;
+		height: 100%;
+		background: #fff url("../../asset/icon/down.png") no-repeat 12px center;
+		background-size:  16px 16px;
+	}
+	.combobox-btn:hover{
+		background-color:#E9EBEE;
+	}
+	.combobox-btn-selected{
+		background-image: url('../../asset/icon/up.png');
+	}
+	.combobox .combobox-select{
+		box-sizing: border-box;
+		width: 100%;
+		position: absolute;
+		top:40px;
+		border: 1px solid #bbb;
+		background-color: #fff;
+		display:none;
+	}
+		.combobox .combobox-select .combobox-item{
+			padding-left: 36px;
+			height: 40px;
+			box-sizing: border-box;
+			display: flex;
+			align-items: center;
+		}
+		.combobox .combobox-select .combobox-item:hover{
+			background-color: #e9ebee;
+			cursor: pointer;
+			color:#000;
+		}
+		.combobox .combobox-select .combobox-item-selected{
+			color:#fff;
+			background: #019160 url('../../asset/icon/down.png') no-repeat 10px center;
+			background-size: 16px 16px;
+		}
+
+
+
+/*DROP DOWN*/
+.drop-down {
+	width: 213px;
+	height: 40px;
+	box-sizing:border-box;
+	padding: 0 0 0 16px;
+	margin-left:16px;
+	border: 1px solid #bbbbbb;
+	border-radius: 4px;
+	background-image: #fff url("../../asset/icon/down.png") no-repeat  calc(100% - 12px) center;
+	background-size: 16px 16px;
+	text-align:left ;
+	font-family: GoogleSans;
+	line-height: 40px;
+}
+	.drop-down:hover{
+		cursor:pointer;
+	}
+	.drop-down:focus {
+		border:1px solid #019160;
+	}

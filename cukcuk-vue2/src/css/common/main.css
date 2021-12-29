@@ -1,0 +1,38 @@
+@import url("google-sans.css");
+@import url("../component/button.css");
+@import url("../component/icon.css");
+@import url("../component/navbar-item.css");
+@import url("../component/input.css");
+
+@import url("../component/grid-table.css");
+@import url("../component/scrollbar.css");
+
+@import url("dialog.css");
+
+.w.small{
+	width: 213px !important;
+	box-sizing: border-box !important;
+}
+
+.w-large{
+	width: 440px !important;
+	box-sizing: border-box !important;
+}
+
+.margin-right-16{
+	margin-right: 16px !important;
+}
+
+.align-center{
+	text-align: center !important;
+}
+.align-left{
+	text-align: left !important;
+}
+.align-right{
+	text-align: right !important;
+}
+
+button:focus{
+	outline: none;
+}

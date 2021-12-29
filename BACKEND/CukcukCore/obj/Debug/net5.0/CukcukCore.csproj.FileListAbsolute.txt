@@ -1,0 +1,12 @@
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\bin\Debug\net5.0\CukcukCore.deps.json
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\bin\Debug\net5.0\CukcukCore.dll
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\bin\Debug\net5.0\ref\CukcukCore.dll
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\bin\Debug\net5.0\CukcukCore.pdb
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\obj\Debug\net5.0\CukcukCore.csproj.AssemblyReference.cache
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\obj\Debug\net5.0\CukcukCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\obj\Debug\net5.0\CukcukCore.AssemblyInfoInputs.cache
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\obj\Debug\net5.0\CukcukCore.AssemblyInfo.cs
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\obj\Debug\net5.0\CukcukCore.csproj.CoreCompileInputs.cache
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\obj\Debug\net5.0\CukcukCore.dll
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\obj\Debug\net5.0\ref\CukcukCore.dll
+D:\1PROJECT\MS.WEB2021_09\965-hnminh\BACKEND\CukcukCore\obj\Debug\net5.0\CukcukCore.pdb
